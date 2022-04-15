@@ -266,5 +266,4 @@ def ask():
             continue
 
 
-# Add GUI
 menu()
