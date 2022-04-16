@@ -214,6 +214,7 @@ def calculate_combo():
 
 
 def checkout():
+    file = open("/Users/Yigit Emik/Desktop/receipt.txt", "+a")
     # Printing confirmed check-out and receipt info
     print("Thanks for shopping from us!")
     print("Here is your receipt:")
@@ -225,7 +226,7 @@ def checkout():
     print("Total: ", calculate_combo(), "$")
     print("A total of ", discount, "$ discount has been applied")
     file.write(checkout_file())
-
+    file.close()
 
 def checkout_file():
     # Creating a string to print everything in our file.
